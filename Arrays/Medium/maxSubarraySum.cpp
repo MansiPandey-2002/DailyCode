@@ -35,3 +35,21 @@ long long maxSubarraySum(vector<int> arr, int n)
     }
     return maximum;
 }
+
+//Optimal Solution 
+long long maxSubarraySum(vector<int> arr, int n)
+{
+    long sum=0;
+    long maximum=LONG_MIN;
+    for(int i=0;i<n;i++)
+    {
+        sum+=arr[i];
+        if(sum>maximum)
+            maximum=sum;
+        if(sum<0)
+            sum=0;
+    }
+    if(maximum<0)
+        return 0;
+    return maximum;
+}
