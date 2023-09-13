@@ -17,3 +17,21 @@ long long maxSubarraySum(vector<int> arr, int n)
     }
     return maximum;
 }
+
+
+//Better Solution [Removing 3rd loop]
+long long maxSubarraySum(vector<int> arr, int n)
+{
+    long sum;
+    long maximum=0;
+    for(int i=0;i<n;i++)
+    {
+        sum=0;
+        for(int j=i;j<n;j++)
+        {
+            sum+=arr[j];
+            maximum=max(maximum,sum);
+        }
+    }
+    return maximum;
+}
