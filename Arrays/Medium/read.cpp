@@ -37,7 +37,7 @@ int main()
     int n = 4;
     vector<int> arr = {5, 10, 9, 8};
     int target = 15;
-    string ans = twoSum(n, arr, target);
+    string ans = read2(n, arr, target);
     cout << "Answer is " << ans << endl;
     return 0;
 }
