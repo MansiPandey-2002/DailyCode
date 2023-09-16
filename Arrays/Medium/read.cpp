@@ -34,10 +34,10 @@ string read2(int n, vector<int> book, int target)
 //Main 
 int main()
 {
-    int n = 5;
-    vector<int> arr = {2, 6, 5, 8, 11};
-    int target = 14;
+    int n = 4;
+    vector<int> arr = {5, 10, 9, 8};
+    int target = 15;
     string ans = twoSum(n, arr, target);
-    cout << "This is the answer for variant 1: " << ans << endl;
+    cout << "Answer is " << ans << endl;
     return 0;
 }
