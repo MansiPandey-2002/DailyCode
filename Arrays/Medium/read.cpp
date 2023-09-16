@@ -1,5 +1,5 @@
 //Brute Force
-string read(int n, vector<int> book, int target)
+string read1(int n, vector<int> book, int target)
 {
     for(int i=0;i<n;i++)
     {
@@ -14,7 +14,7 @@ string read(int n, vector<int> book, int target)
 
 
 //optimal solution
-string read(int n, vector<int> book, int target)
+string read2(int n, vector<int> book, int target)
 {
    sort(book.begin(),book.end());
    int l=0;
