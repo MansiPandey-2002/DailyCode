@@ -30,3 +30,14 @@ string read(int n, vector<int> book, int target)
    }
    return "NO";
 }
+
+//Main 
+int main()
+{
+    int n = 5;
+    vector<int> arr = {2, 6, 5, 8, 11};
+    int target = 14;
+    string ans = twoSum(n, arr, target);
+    cout << "This is the answer for variant 1: " << ans << endl;
+    return 0;
+}
